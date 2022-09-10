@@ -63,7 +63,7 @@ function onSearchLoadMoreBtn() {
       behavior: 'smooth',
     });
     totalHits += images.hits.length;
-    if (totalHits > images.totalHits) {
+    if (totalHits >= images.totalHits) {
       refs.loadMoreBtn.style.display = 'none';
       Notiflix.Notify.failure(
         "We're sorry, but you've reached the end of search results."
